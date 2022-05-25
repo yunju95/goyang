@@ -12,7 +12,7 @@
 
 .doc-gnb{position:relative;padding:0 40px;background: #fff}
 .doc-gnb .doc-tit{position:absolute;left:40px;top:27px}
-.doc-gnb .doc-tit .link_logo{display:block;width:265px;height:34px;padding:0 7px}
+.doc-gnb .doc-tit .link_logo{display:block;width:265px;height:34px;margin:0 7px;background:url(../img/common/logo.png) no-repeat 0 0;background-size: 100% auto}
 .doc-gnb .list_menu{font-size:0;margin:0 auto;text-align: center}
 .doc-gnb .list_menu > li{display: inline-block;padding:0 31px;vertical-align: top;}
 .doc-gnb .list_menu > li > .link_menu{display:block;position:relative;padding:27px 0 26px;font-size:18px;line-height:34px;
