@@ -1,0 +1,36 @@
+/* wrap - main */
+#wrap{padding-top:123px}
+
+/* top quick menu */
+.header{position:fixed;left:0;top:0;right:0;z-index:100}
+.header .top_quickmenu{height:36px;padding:0 30px;font-size:0;text-align:right;background-color: #f6f6f6;box-sizing: border-box}
+.header .top_quickmenu .link_menu{display:inline-block;position:relative;padding:0 10px;font-size:13px;line-height:36px}
+.header .top_quickmenu .link_menu + .link_menu::after{position:absolute;left:-1px;top:50%;margin-top:-1px;width:2px;height:2px;background-color:#333;content:''}
+.header .top_quickmenu .list_quickmenu{float: left}
+.header .top_quickmenu .list_quickmenu li{display: inline-block;position:relative;vertical-align: top}
+.header .top_quickmenu .list_quickmenu li + li::after{position:absolute;left:-1px;top:50%;margin-top:-1px;width:2px;height:2px;background-color:#333;content:''}
+
+.doc-gnb{position:relative;padding:0 40px;background: #fff}
+.doc-gnb .doc-tit{position:absolute;left:40px;top:27px}
+.doc-gnb .doc-tit .link_logo{display:block;width:265px;height:34px;padding:0 7px}
+.doc-gnb .list_menu{font-size:0;margin:0 auto;text-align: center}
+.doc-gnb .list_menu > li{display: inline-block;padding:0 31px;vertical-align: top;}
+.doc-gnb .list_menu > li > .link_menu{display:block;position:relative;padding:27px 0 26px;font-size:18px;line-height:34px;
+font-weight:bold}
+.doc-gnb .list_menu > li:hover > .link_menu{color:#97e342}
+.doc-gnb .list_menu > li:hover > .link_menu::after{position:absolute;left:0;right:0;bottom:0;height:2px;background-color:#97e342;content: ''}
+.doc-gnb .bg_depth2{display: none;position:absolute;top:100%;left:0;right:0;z-index: -1;height:241px;border-top:1px solid #eaeaea;background-color: #fff;box-shadow: 18px 3px 27px rgba(173,173,173,0.22)}
+.doc-gnb .list_menu:hover + .bg_depth2{display: block}
+.doc-gnb .list_menudep2{display: none;position: absolute;padding-top:23px;text-align: left}
+.doc-gnb .list_menu:hover .list_menudep2{display: block}
+.doc-gnb .list_menudep2  li + li {margin-top: 8px;}
+.doc-gnb .list_menudep2 .link_menu{display: block;}
+.doc-gnb .list_menudep2 .txt_menu{display:inline-block;position:relative;padding-right:14px;margin:5px 0;font-size:14px;line-height:18px;color: #333}
+.doc-gnb .list_menudep2  li:hover .txt_menu{color:#74c500}
+.doc-gnb .list_menudep2  li:hover .txt_menu::after{position:absolute;left:0;right:0;bottom:0;height:1px;background-color:#74c500;box-sizing:border-box;content: ''}
+.doc-gnb .list_menudep2  li:hover .txt_menu::before{position: absolute;right:-4px;bottom:0;width:9px;height:15px;background:url(../img/common/ico_nav_ov.png) no-repeat 0 0;background-size:9px 15px;content: '';}
+.doc-gnb .btn_allmenu{display:block;position: absolute;right:37px;top:24px;width:23px;padding:10px 3px;box-sizing: unset}
+.doc-gnb .btn_allmenu span[class^=bar_]{display: block;height:2px;background-color:#3b302f}
+.doc-gnb .btn_allmenu .bar_bottom{margin-top:5px}
+
+.wrap_allmenu{display: none;}
