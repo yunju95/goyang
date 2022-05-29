@@ -1,5 +1,5 @@
 /* wrap - main */
-#wrap{padding-top:123px}
+#wrap{overflow:hidden;padding-top:123px}
 
 /* top quick menu */
 .header{position:fixed;left:0;top:0;right:0;z-index:100}
@@ -9,28 +9,57 @@
 .header .top_quickmenu .list_quickmenu{float: left}
 .header .top_quickmenu .list_quickmenu li{display: inline-block;position:relative;vertical-align: top}
 .header .top_quickmenu .list_quickmenu li + li::after{position:absolute;left:-1px;top:50%;margin-top:-1px;width:2px;height:2px;background-color:#333;content:''}
-
-.doc-gnb{position:relative;padding:0 40px;background: #fff}
-.doc-gnb .doc-tit{position:absolute;left:40px;top:27px}
-.doc-gnb .doc-tit .link_logo{display:block;width:265px;height:34px;margin:0 7px;background:url(../img/common/logo.png) no-repeat 0 0;background-size: 100% auto}
-.doc-gnb .list_menu{font-size:0;margin:0 auto;text-align: center}
-.doc-gnb .list_menu > li{display: inline-block;padding:0 31px;vertical-align: top;}
-.doc-gnb .list_menu > li > .link_menu{display:block;position:relative;padding:27px 0 26px;font-size:18px;line-height:34px;
+/* gnb */
+.wrap_gnb{position:relative;padding:0 40px;background: #fff;text-align: center;font-size:0}
+.wrap_gnb .logo{position:absolute;left:40px;top:27px}
+.wrap_gnb .logo .link_logo{display:block;width:265px;height:34px;margin:0 7px;background:url(../img/common/logo.png) no-repeat 0 0;background-size: 100% auto}
+.wrap_gnblist{display: inline-block;position:relative} 
+.wrap_gnblist .list_menu{font-size:0;text-align: center}
+.wrap_gnblist .list_menu > li{display: inline-block;padding:0 31px;vertical-align: top;}
+.wrap_gnblist .list_menu > li > .link_menu{display:block;position:relative;padding:27px 0 26px;font-size:18px;line-height:34px;
 font-weight:bold}
-.doc-gnb .list_menu > li:hover > .link_menu{color:#97e342}
-.doc-gnb .list_menu > li:hover > .link_menu::after{position:absolute;left:0;right:0;bottom:0;height:2px;background-color:#97e342;content: ''}
-.doc-gnb .bg_depth2{display: none;position:absolute;top:100%;left:0;right:0;z-index: -1;height:241px;border-top:1px solid #eaeaea;background-color: #fff;box-shadow: 18px 3px 27px rgba(173,173,173,0.22)}
+.wrap_gnblist .list_menu > li:hover > .link_menu{color:#97e342}
+.wrap_gnblist .list_menu > li:hover > .link_menu::after{position:absolute;left:0;right:0;bottom:0;height:2px;background-color:#97e342;content: ''}
+.wrap_gnblist .bg_depth2{display: none;position:fixed;top:123px;left:0;right:0;z-index: -1;height:241px;border-top:1px solid #eaeaea;background-color: #fff;box-shadow: 18px 3px 27px rgba(173,173,173,0.22)}
+.wrap_gnblist .list_menudep2{display: none;position: absolute;padding-top:23px;text-align: left}
+.wrap_gnblist .list_menudep2  li + li {margin-top: 8px;}
+.wrap_gnblist .list_menudep2 .link_menu{display: block;}
+.wrap_gnblist .list_menudep2 .txt_menu{display:inline-block;position:relative;padding-right:14px;margin:5px 0;font-size:14px;line-height:18px;color: #333}
+.wrap_gnblist .list_menudep2  li:hover .txt_menu{color:#74c500}
+.wrap_gnblist .list_menudep2  li:hover .txt_menu::after{position:absolute;left:0;right:0;bottom:0;height:1px;background-color:#74c500;box-sizing:border-box;content: ''}
+.wrap_gnblist .list_menudep2  li:hover .txt_menu::before{position: absolute;right:-4px;bottom:0;width:9px;height:15px;background:url(../img/common/ico_nav_ov.png) no-repeat 0 0;background-size:9px 15px;content: '';}
+.wrap_gnb .btn_allmenu{display:block;position: absolute;right:37px;top:24px;width:23px;padding:10px 3px;box-sizing: unset}
+.wrap_gnb .btn_allmenu span[class^=bar_]{display: block;height:2px;background-color:#3b302f}
+.wrap_gnb .btn_allmenu .bar_bottom{margin-top:5px}
+/* allmenu */
+.wrap_allmenu{display: none;justify-content: center;align-items: center;position: fixed;left:0;top:0;right:0;bottom:0;z-index: 100;}
+.wrap_allmenu .bg_allmenu{position:absolute;left:0;top:0;right:0;bottom:0;z-index:-1;background-color: rgba(59,48,47,0.4)}
+.cont_allmenu{display:flex;overflow:hidden;position:relative;width:1171px;height:638px;margin:30px;border-radius:10px;background-color:#fff;box-sizing: border-box}
+.cont_allmenu .area_thumb{flex:0 1 417px;background:url(../img/common/thumb_allmenu.png)no-repeat 50%;background-size:cover}
+.cont_allmenu .area_allmenu{display:flex;align-items: center;padding:20px 30px 20px 53px}
+.cont_allmenu .list_menu > li > .link_menu{display: inline-block;margin-left:22px;font-size:22px;line-height:23px;font-weight:bold;color:#333}
+.cont_allmenu .list_menu > li + li{margin-top: 60px}
+.cont_allmenu .list_menudep2{margin-top:18px;font-size:0}
+.cont_allmenu .list_menudep2 li{display: inline-block;margin-left:22px;vertical-align: top}
+.cont_allmenu .list_menudep2 .link_menu{display: block;position:relative;font-size:14px;line-height: 20px;color:#555}
+.cont_allmenu .list_menudep2 li:hover .link_menu{color:#74c500}
+.cont_allmenu .list_menudep2 li:hover .link_menu::after{position: absolute;left:0;right:0;bottom:0;height:1px;background-color:#74c500;content: ''}
+.cont_allmenu .link_close{position:absolute;right: 20px;top: 20px;width:46px;height:46px;background: url(../img/common/ico_close_allmenu.png) no-repeat 0 0;background-size: cover}
 
-.doc-gnb .list_menudep2{display: none;position: absolute;padding-top:23px;text-align: left}
+/* footer */
+.footer{background-color: #42443c;}
 
-.doc-gnb .list_menudep2  li + li {margin-top: 8px;}
-.doc-gnb .list_menudep2 .link_menu{display: block;}
-.doc-gnb .list_menudep2 .txt_menu{display:inline-block;position:relative;padding-right:14px;margin:5px 0;font-size:14px;line-height:18px;color: #333}
-.doc-gnb .list_menudep2  li:hover .txt_menu{color:#74c500}
-.doc-gnb .list_menudep2  li:hover .txt_menu::after{position:absolute;left:0;right:0;bottom:0;height:1px;background-color:#74c500;box-sizing:border-box;content: ''}
-.doc-gnb .list_menudep2  li:hover .txt_menu::before{position: absolute;right:-4px;bottom:0;width:9px;height:15px;background:url(../img/common/ico_nav_ov.png) no-repeat 0 0;background-size:9px 15px;content: '';}
-.doc-gnb .btn_allmenu{display:block;position: absolute;right:37px;top:24px;width:23px;padding:10px 3px;box-sizing: unset}
-.doc-gnb .btn_allmenu span[class^=bar_]{display: block;height:2px;background-color:#3b302f}
-.doc-gnb .btn_allmenu .bar_bottom{margin-top:5px}
 
-.wrap_allmenu{display: none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
