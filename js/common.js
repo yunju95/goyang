@@ -51,12 +51,18 @@ $(function(){
   
   // main entrolment slider
   const swiperEntrol = new Swiper('.slide_entrolment', {
-    slidesPerView: 4,
-    spaceBetween: 20,
+    slidesPerView: 2,
+    spaceBetween: 10,
     navigation: {
       nextEl: ".slide_entrolment .swiper-button-next",
       prevEl: ".slide_entrolment .swiper-button-prev"
     },
+    breakpoints: {
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+    }
   });
   
   // main popup slider

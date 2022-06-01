@@ -66,6 +66,11 @@
   <div class="cont_allmenu">
     <div class="area_thumb"></div>
     <div class="area_allmenu">
+      <ul class="list_quickmenu">
+        <li><a href="#none" class="link_menu">고양시청</a></li>
+        <li><a href="#none" class="link_menu">통합예약</a></li>
+        <li><a href="#none" class="link_menu">고양시의회</a></li>
+      </ul>
       <ul class="list_menu">
         <li>
           <a href="#none" class="link_menu">고양생태환경교육센터</a>
@@ -130,6 +135,25 @@ $(function(){
   $('.cont_allmenu .link_close, .bg_allmenu').click(function(e){
     e.preventDefault();
     $('.wrap_allmenu').hide();
+    $('.cont_allmenu .list_menu > li').removeClass('active');
+  });
+  
+  
+  $('.cont_allmenu .list_menu > li > .link_menu').click(function(e){
+    e.preventDefault();
+    if($(window).innerWidth() < 767){
+      if($(this).parent('li').hasClass('active')){
+        $(this).parent('li').removeClass('active');
+      } else {
+        $('.cont_allmenu .list_menu > li').removeClass('active');
+        $(this).parent('li').addClass('active');
+      }
+    }
+  });
+  $(window).on('load resize', function(){
+    if($(this).innerWidth() > 767){
+      $('.cont_allmenu .list_menu > li').removeClass('active');
+    }
   });
 });
 </script>
