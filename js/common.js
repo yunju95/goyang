@@ -73,4 +73,13 @@ $(function(){
       type: 'bullets',
     },
   });
+
+  // sub tab
+  $('.wrap_tab .link_tab').click(function(e){
+    e.preventDefault();
+    if($(this).attr('aria-selected', false)){
+      $('.wrap_tab .link_tab').attr('aria-selected', false);
+      $(this).attr('aria-selected', true);
+    }
+  });
 });
