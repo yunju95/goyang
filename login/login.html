@@ -28,21 +28,31 @@
     <!-- // header -->
     <!-- container -->
     <div id="container" class="sub">
-      <div class="wrap_submenu">
-        <script>
-          $(function(){ $('.wrap_submenu').load('../layout/submenu.html');});
-        </script>
-      </div>
-      <h2 class="screen_out">고양생태환경교육센터</h2>
-      <section class="section_introduce">
+      <h2 class="screen_out">로그인 본문</h2>
+      <section class="section_login">
         <div class="section_inner">
           <div class="wrap_subtit">
-            <h3>기본목표 및 교육방향</h3>
+            <h3>로그인</h3>
           </div>
-          <div class="area_ready">
-            <span class="box_img">
-              <img src="../img/sub/img_ready.png" alt="! 준비중입니다." class="img_g">
-            </span>
+          <div class="head_notice">
+            <span class="img_box"><img src="../img/sub/img_enrolment.png" alt="" class="img_g"></span>
+            <p class="txt_g">전자정부 대민서비스 정보보호 정책에 따라 로그인 후 30분 동안 <br class="type_pc">아무런 동작이 없을 경우 자동으로 로그아웃 됩니다.</p>
+          </div>
+          <div class="cont_input type_login"> <!-- 로그인 페이지일 경우 type_login 클래스 추가 -->
+            <div class="module_input">
+              <div class="box_input"><input type="text" id="id" class="input" placeholder="아이디 입력"></div>
+            </div>
+            <div class="module_input">
+              <div class="box_input"><input type="text" id="password" class="input" placeholder="비밀번호 입력"></div>
+            </div>
+            <div class="wrap_btnlogin">
+              <a href="#none" class="link_login">로그인</a>
+              <ul class="list_log">
+                <li><a href="#none" class="link_id">아이디 찾기</a></li>
+                <li><a href="#none" class="link_pw">비밀번호 찾기</a></li>
+                <li><a href="#none" class="link_mb">회원가입</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>

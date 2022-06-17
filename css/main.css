@@ -35,7 +35,7 @@
 .wrap_tabenrolment .link_tab[aria-selected=true]::after {display: none;}
 
 
-.slide_entrolment{position: relative;max-width: 1312px;margin: 0 auto;padding:56px 49px;}
+.slide_entrolment{position: relative;overflow: hidden;max-width: 1312px;margin: 0 auto;padding:56px 49px;}
 /* .slide_entrolment::before{position: absolute;left:0;top:0;z-index:10;height:100%;width:36px;background-color: #f2f8ea;content: '';}
 .slide_entrolment::after{position: absolute;right:0;top:0;z-index:1;height:100%;width:36px;background-color: #f2f8ea;content: '';} */
 .slide_entrolment .swiper-slide{border-radius: 20px;box-shadow:4px 0 27px rgba(195,201,188,0.17);}

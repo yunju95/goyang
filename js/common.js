@@ -82,4 +82,15 @@ $(function(){
       $(this).attr('aria-selected', true);
     }
   });
+
+  // sub popoup
+  $('.list_comm.type_gallery .link_list, .section_enrol_view .wrap_link .link_submit').click(function(e){
+    e.preventDefault();
+    $('.wrap_subpopup').css('display', 'flex');
+  });
+  $('.wrap_subpopup .btn_close, .bg_subpopup').click(function(e){
+    e.preventDefault();
+    $('.wrap_subpopup').hide();
+  });
+  
 });
