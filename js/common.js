@@ -93,4 +93,8 @@ $(function(){
     $('.wrap_subpopup').hide();
   });
   
+  // module remove
+  $('.area_input .btn_remove').click(function(){
+    $(this).parent('.cont_input').hide();
+  });
 });
