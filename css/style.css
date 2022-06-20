@@ -321,6 +321,7 @@
 .wrap_subpopup .cont_tbl .tbl td {border: none;border-bottom: 1px solid #e2e2e2;}
 .wrap_subpopup td.has_tbl {display: flex;align-items: center;}
 .wrap_subpopup .box_input {display: block;overflow: hidden;position: relative;width: 234px;height: 46px;border-radius: 5px;border: 1px solid #e2e2e2;background-color: #fff;}
+.wrap_subpopup .box_input .input {display: block;width: 100%;height: 100%;padding: 0 19px;border: none;box-sizing: border-box;} /* 2022-06-20 추가 */
 .wrap_subpopup .box_input .select {display: block;width: 100%;height: 100%;padding: 0 40px 0 19px;border: none;font-size: 16px;color: #333;box-sizing: border-box;}
 .wrap_subpopup .box_input.type_select::after {position: absolute;top: 19px;right: 20px;z-index: 10;width: 12px;height: 6px;background: url(../img/sub/ico_select_arr.png) no-repeat 0 0;background-size: 100%;content: '';}
 .wrap_subpopup .has_tbl .desc_input {margin-left: 14px;font-size: 16px; color: #333;}
@@ -616,6 +617,7 @@
   .wrap_subpopup .btn_close {width: 30px;height: 30px;}
 
   .wrap_subpopup .box_input {width: 100%;height: 31px;border-radius: 2.5px;}
+  .wrap_subpopup .box_input .input {padding: 0 8px;font-size: 12px;} /* 2022-06-20 추가 */
   .wrap_subpopup .box_input .select {padding: 0 22px 0 8px;font-size: 12px;}
   .wrap_subpopup .box_input.type_select::after {top: 13px;right:10px;width: 7.5px;height: 4px;}
   .wrap_subpopup .has_tbl .desc_input {margin-left: 14px;font-size: 16px; color: #333;}
