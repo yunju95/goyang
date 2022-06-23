@@ -8,10 +8,17 @@
 .wrap_mv .area_controller{display:flex;align-items: center;position: absolute;left: 50%;bottom: 40px;z-index:1;transform: translateX(-50%);}
 .wrap_mv .wrap_progress{display: flex;align-items: center;}
 .wrap_mv .wrap_progress .num_page{width:auto;font-size:16px;line-height:16px;color: #fff}
-.wrap_mv .wrap_progress .page_active .swiper-pagination-bullet{display: none;width:auto;height:auto;margin: 0;font-weight:bold;background-color: transparent}
-.wrap_mv .wrap_progress .page_active .swiper-pagination-bullet-active{display: block;}
-.wrap_mv .wrap_progress .outer_progress{overflow:hidden;position:relative;width:141px;height:2px;margin:0 12px;background-color: rgba(255,255,255,0.6)}
-#progress{position:absolute;left:0;top:0;z-index:1;height:100%;background-color: #fff; }
+/* 2022-06-23 수정 시작 */
+.wrap_mv .wrap_progress .page_active .swiper-pagination-bullet{position:absolute;z-index: -1;width:auto;height:auto;margin: 0;font-weight:bold;background-color: transparent;opacity: 0;}
+.wrap_mv .wrap_progress .page_active .swiper-pagination-bullet-active{position: static;z-index: 1;opacity: 1;}
+.wrap_mv .wrap_progress .outer_progress{display: inline-block;overflow:hidden;position:relative;width:141px;height:2px;margin:6px 12px 0;vertical-align: top;background-color: rgba(255,255,255,0.6)}
+.wrap_mv .swiper-pagination-bullet .outer_progress .progress{position:absolute;left:0;top:0;z-index:1;height:100%;width:100%;background-color: #fff;}
+.wrap_mv .swiper-pagination-bullet.swiper-pagination-bullet-active .outer_progress .progress{animation:progressBar 5s linear}
+@keyframes progressBar {
+  0% {width: 0;}
+  100% {width: 100%;}
+}
+/* 2022-06-23 수정 끝 */
 .wrap_mv .wrap_arrow{margin-left:35px;font-size:0;white-space: nowrap;}
 .wrap_mv .wrap_arrow .swiper-button-prev,
 .wrap_mv .wrap_arrow .swiper-button-next{display:inline-block;position: static;width:11px;height:20px;margin:0;}
