@@ -83,7 +83,8 @@ margin-left: auto;border-left: 1px solid #e2e2e2;}
 .wrap_submenu .btn_print .ico_print{width: 21px;height: 21px;color:transparent;background: url(../img/common/ico_print.png) no-repeat 0 0;background-size: cover;}
 
 .wrap_submenu div[class^='menu_depth']{position: relative;z-index: 10;height: 100%;padding-left:21px;border-right: 1px solid #e2e2e2;}
-.wrap_submenu div[class^='menu_depth'] .tit_menu{display: block;position: relative;font-size: 15px;line-height:59px;font-weight: normal;cursor: pointer;}
+.wrap_submenu div[class^='menu_depth'] .tit_menu{display: block;position: relative;font-size: 15px;line-height:59px;font-weight: 500;cursor: pointer;} /* 2022-06-25 수정 */
+.wrap_submenu .menu_depth2 .tit_menu{color: #6ebb00;} /* 2022-06-25 수정 */
 .wrap_submenu div[class^='menu_depth'] .tit_menu::after{position: absolute;top: 50%;right: 17px;width: 12px;height: 8px;margin-top: -4px;background: url(../img/common/ico_submenu_arr.png) no-repeat;background-size: 100%;content: '';}
 .wrap_submenu div[class^='menu_depth'].on .tit_menu::after{transform: rotate(180deg);}
 .wrap_submenu .menu_depth1{width: 172px;}

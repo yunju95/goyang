@@ -10,7 +10,8 @@
 .sub div[class^='area_']{margin-top: 70px;}
 
 .wrap_contit{padding-bottom: 30px;}
-.wrap_contit strong {font-size: 28px;line-height: 1;color: #333}
+.wrap_contit strong {display: block;position: relative;padding-left: 35px;font-size: 28px;line-height: 1;color: #84ce44} /* 2022-06-24 수정 */
+.wrap_contit strong::before {position: absolute;left: 0;top: -5px;width: 24px;height: 35px;background: url(../img/sub/ico_tit_leaf.png) no-repeat 0 0;background-size: 100%;content: "";} /* 2022-06-24 추가 */
 .area_tit .wrap_contit {padding-bottom: 0;}
 
 .areaTit{display: block;font-size: 22px;line-height: 1;font-weight: 500;color: #333;letter-spacing: -0.025em;}
@@ -103,7 +104,7 @@
 /* 3. 수강신청 */
 .cont_enrol{margin-top: 30px;}
 .head_notice{display: flex;align-items: center;justify-content: center;position: relative;height: 111.5px;padding: 20px 210px;margin-top: 87px;text-align: center;border-radius:15px;background-color: #f2f8ea;}
-.head_notice .img_box{position: absolute;left: 58px;bottom: 0;}
+.head_notice .img_box{display: inline-block;width: 30px;height: 30px;margin-right: 12px;vertical-align: top;} /* 2022-06-24 수정 */
 
 .cont_search {display: flex;width: 432px;height: 60px;margin: 58px auto 0}
 .cont_search .input_box{flex: 1;padding: 20px;border-radius: 5px;border: 1px solid #e2e2e2;background-color: #fff;}
@@ -203,8 +204,9 @@
 
 
 
-.area_apply_guide {display: flex;align-items: center;position: relative;height: 158px;padding: 42px 45px;margin-top: 77px;border-radius: 15px;background-color: #f2f8ea;box-sizing: border-box;}
+.area_apply_guide {display: flex;align-items: center;position: relative;height: 158px;padding: 42px 45px 42px 42px;margin-top: 77px;border-radius: 15px;background-color: #f2f8ea;box-sizing: border-box;} /* 2022-06-24 수정 */
 .area_apply_guide strong {flex: 0 0 291px;position: relative;font-size: 18px;line-height: 30px;color: #333;font-weight: 500;}
+.area_apply_guide .ico_mark {width: 30px;height: 30px;margin: 7px 12px auto 0;} /* 2022-06-24 추가 */
 .area_apply_guide strong::after {position: absolute;top: 50%;right: 0;width: 1px;height: 74px;background-color: #dde6d2;transform: translateY(-50%);content: '';}
 .area_apply_guide strong em {color: #84ce44;font-weight: bold;font-style: normal;}
 .area_apply_guide .info_guide {padding-left: 30px;font-size: 16px;line-height: 32px;color: #333;}
@@ -384,7 +386,8 @@
   .wrap_subtit h3{font-size: 26px;}
 
   .wrap_contit{padding-bottom: 20px;}
-  .wrap_contit strong {font-size: 19px;}
+  .wrap_contit strong {padding-left: 22px;font-size: 19px;} /* 2022-06-24 수정 */
+  .wrap_contit strong::before {top: -2px;width: 16px;height: 26px;} /* 2022-06-24 추가 */
 
   .areaTit {font-size: 14px;line-height: 1.2;}
   .txt_g {font-size: 14px;line-height: 21px;}
@@ -528,6 +531,7 @@
   .area_write .cont_write .attach_write .btn_attach {flex: 0 0 85px;height: 36px;margin-left: 6px;line-height: 34px;border-radius: 2.5px;font-size: 13px;}
 
   .area_apply_guide {align-items: baseline;flex-direction: column;height: auto;min-height: 149px;padding: 23.5px 24px 24px;border-radius: 7.5px;}
+  .area_apply_guide .ico_mark {display: none;} /* 2022-06-24 추가 */
   .area_apply_guide strong {flex: 0 0 auto;font-size: 13px;line-height: 19px;}
   .area_apply_guide strong::after {display: none;}
   .area_apply_guide .info_guide {padding-left: 0;padding-top: 18.5px;font-size: 12px;line-height: 18px;}
