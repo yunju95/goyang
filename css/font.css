@@ -1,31 +1,8 @@
 /* noto sans */
-@font-face {
-  font-family: 'Noto Sans', sans-serif;
-  src: url("./font/NotoSansKR-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Noto Sans', sans-serif;
-  src: url("./font/NotoSansKR-Thin.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Noto Sans', sans-serif;
-  src: url("./font/NotoSansKR-Black.woff") format("woff");
-  font-weight: black;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Noto Sans', sans-serif;
-  src: url("./font/NotoSansKR-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/earlyaccess/notosanskr.css');
 
 /* open sans */
-@import url('http://fonts.cdnfonts.com/css/open-sans');
+@import url('https://fonts.cdnfonts.com/css/open-sans');
 
 /* jalan */
 @font-face {

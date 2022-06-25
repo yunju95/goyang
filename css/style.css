@@ -12,6 +12,8 @@
 .wrap_contit{padding-bottom: 30px;}
 .wrap_contit strong {display: block;position: relative;padding-left: 35px;font-size: 28px;line-height: 1;color: #84ce44} /* 2022-06-24 수정 */
 .wrap_contit strong::before {position: absolute;left: 0;top: -5px;width: 24px;height: 35px;background: url(../img/sub/ico_tit_leaf.png) no-repeat 0 0;background-size: 100%;content: "";} /* 2022-06-24 추가 */
+.wrap_contit.tac strong {color: #333;} /* 2022-06-25 추가 */
+.wrap_contit.tac strong::before {display: none;} /* 2022-06-25 추가 */
 .area_tit .wrap_contit {padding-bottom: 0;}
 
 .areaTit{display: block;font-size: 22px;line-height: 1;font-weight: 500;color: #333;letter-spacing: -0.025em;}
