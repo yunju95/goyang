@@ -162,7 +162,8 @@
 .area_list .list_comm {margin-top: 30px;border-top: 2px solid #000;}
 .area_list .list_comm li {border-bottom: 1px solid #e2e2e2;}
 .area_list .list_comm .link_list {display: flex;align-items: center;padding: 22px 26px;}
-.area_list .list_comm .link_list .box_thumb {margin-right: 40px;flex: 0 0 195px;height: 160px;background: #f6f6f6 url(../img/sub/thumb_empty.png) no-repeat 50%;background-size: 100%;}
+.area_list .list_comm .link_list .box_thumb {position: relative;margin-right: 40px;flex: 0 0 195px;height: 160px;background: #f6f6f6 url(../img/sub/thumb_empty.png) no-repeat 50%;background-size: 100%;} /* 2022-06-30 수정 */
+.area_list .list_comm .link_list .box_thumb img{position: absolute;left: 50%;top: 50%;max-width: 100%;transform: translate(-50%, -50%);} /* 2022-06-30 추가 */
 
 .area_list .list_comm .link_list .box_info {flex: 1;overflow: hidden;}
 .area_list .list_comm .link_list .tit_list{display: block;overflow: hidden;font-size: 18px;font-weight: 600;line-height: 1;color: #333;white-space: nowrap;text-overflow: ellipsis;}
