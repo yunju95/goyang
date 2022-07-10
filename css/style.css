@@ -433,6 +433,7 @@ align-items: center;flex:0 0 33.333%;height: 284px;padding: 63px 0 54px;border: 
   .cont_tbl .tbl th{padding: 17.5px 21.5px;border: 1px solid #e2e2e2;font-size: 12px;line-height: 17px;font-weight: 500;text-align: center;color: #333;background-color: #f6f6f6;white-space: nowrap;}
   .cont_tbl .tbl td{padding: 17px 15.5px 16.5px;border: 1px solid #e2e2e2;font-size: 12px;line-height: 17px;font-weight: 400;text-align: center;color: #333;white-space: nowrap;}
 
+  /* 2022-07-10 추가 시작 */
   .area_introduce .box_illu {display: none;}
   .area_introduce .tit_sub {margin-top:7px;font-size: 17px;line-height: 40px;}
   .area_introduce .tit_cont {font-size: 30px;line-height: 40px;}
@@ -451,7 +452,8 @@ align-items: center;flex:0 0 33.333%;height: 284px;padding: 63px 0 54px;border: 
   .cont_task .list_task li + li {margin: -6px 0 0 -6px;}
   .cont_direction .list_direction li {flex: 0 0 calc(100% - 0px);height: auto;padding: 10px 0;padding-left: 15px;margin: 8px 0 0 0;border-radius: 17px;font-size: 13px;}
   .cont_direction .list_direction li .txt_num {width: 27px;line-height: 27px;margin-right: 8px;}
-
+  /* // 2022-07-10 추가 끝 */
+  
   .wrap_history .area_txt {margin-top: 2.5px}
   .wrap_history .area_txt .tit_cont{display: flex;justify-content: center;font-size: 32px;}
   .wrap_history .area_txt .tit_cont span{margin: 0 9px;}
