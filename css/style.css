@@ -24,6 +24,31 @@
 /* 1. 생태환경교육센터 */
 .section_introduce .area_ready {display: flex;justify-content: center;align-items: center;height: 462px;padding: 40px;background-color: #f8fbf4;}
 
+/* 2022-07-10 추가 시작 */
+.area_introduce .img_box {position: relative;}
+.area_introduce .box_illu {position: absolute;}
+.area_introduce .illu1 {left: -157px;bottom: -88px;}
+.area_introduce .illu2 {right: -99px;bottom: -134px;}
+.area_introduce .tit_sub {display: block;margin-top: 22px;font-size: 42px;line-height:82px;color: #333;text-align: center;letter-spacing: -0.025em;}
+.area_introduce .tit_cont {display: block;font-family: 'yg-jalnan';font-size: 61px;line-height: 81px;color: #84ce44;text-align: center;letter-spacing: -0.025em;}
+.area_introduce .wrap_contit{margin-top: 100px;}
+.cont_target .list_target{display: flex;}
+.cont_target .list_target li {display: flex;justify-content: space-between;flex-direction: column;
+align-items: center;flex:0 0 33.333%;height: 284px;padding: 63px 0 54px;border: 1px solid #e2e2e2;box-sizing: border-box;}
+.cont_target .list_target li  + li {border-left: none;}
+.cont_target .list_target .ico_target {width: 66px;}
+.cont_target .list_target li:nth-child(2) .ico_target {width: 76px;}
+.cont_target .list_target li:nth-child(3) .ico_target {width: 53px;}
+.cont_target .list_target strong {font-size: 22px;line-height: 1.3;color: #333;letter-spacing: -0.025em;text-align: center;font-weight: 500;}
+
+.cont_task .list_task {display: flex;align-items: center;justify-content: center;height: 305px;border: 2px solid #84ce44;background-color: #fafbf9;border-radius: 152.5px;}
+.cont_task .list_task li {display: flex;align-items: center;justify-content: center;flex: 0 0 239px;height: 239px;border: 1px solid rgba(182,182,182,0.6);border-radius: 100%;font-size: 22px;line-height: 1.3;font-weight: 500;color: #333;text-align: center;background-color: rgba(255,255,255,0.6);}
+.cont_task .list_task li + li {margin: -14px 0 0 -13px;}
+.cont_direction .list_direction {display: flex;flex-wrap: wrap;margin-left: -11px;}
+.cont_direction .list_direction li {display: flex;flex: 0 0 calc(50% - 11px);align-items: center;height: 68px;padding-left:34px;margin: 14px 0 0 11px;border: 1px solid #e2e2e2;border-radius: 34px;font-size: 20px;font-weight: 500;color: #333;letter-spacing: -0.025em;box-sizing: border-box;}
+.cont_direction .list_direction li .txt_num {width: 35px;margin-right: 15px;line-height: 35px;border-radius: 100%;background-color: #84ce44;color: #fff;font-weight: bold;font-family: 'Noto Sans KR',sans-serif;text-align: center;}
+/* // 2022-07-10 추가 끝 */
+
 .wrap_history .area_txt .tit_cont{display: block;font-family: 'yg-jalnan';line-height: 1.2;font-size: 58px;text-align: center;color: rgba(132,206,68, .3)}
 .wrap_history .area_txt .tit_cont span{color: rgba(132,206,68,1)}
 .wrap_history .area_txt .tit_cont span br{display: none;}
@@ -407,6 +432,25 @@
 
   .cont_tbl .tbl th{padding: 17.5px 21.5px;border: 1px solid #e2e2e2;font-size: 12px;line-height: 17px;font-weight: 500;text-align: center;color: #333;background-color: #f6f6f6;white-space: nowrap;}
   .cont_tbl .tbl td{padding: 17px 15.5px 16.5px;border: 1px solid #e2e2e2;font-size: 12px;line-height: 17px;font-weight: 400;text-align: center;color: #333;white-space: nowrap;}
+
+  .area_introduce .box_illu {display: none;}
+  .area_introduce .tit_sub {margin-top:7px;font-size: 17px;line-height: 40px;}
+  .area_introduce .tit_cont {font-size: 30px;line-height: 40px;}
+  .area_introduce .wrap_contit{margin-top: 40px;}
+  .area_introduce .wrap_contit strong{padding-left: 0;}
+  .cont_target .list_target {flex-direction: column;}
+  .cont_target .list_target li + li {border-left: 1px solid #e2e2e2;border-top: none;}
+  .cont_target .list_target .ico_target {width: 33px;}
+  .cont_target .list_target li:nth-child(2) .ico_target {width: 38px;}
+  .cont_target .list_target li:nth-child(3) .ico_target {width: 26.5px;}
+  .cont_target .list_target strong {margin-top:20px;font-size: 12px;}
+  .cont_target .list_target li {height: auto;padding: 30px 0 27px;}
+  .cont_task .list_task {align-items: center;flex-wrap: wrap;justify-content: center;height: auto;padding: 16px 10px;    border-radius: 120px;}
+  .cont_task .list_task li{flex: 0 0 120px;height: 120px;font-size: 12px;}
+  .cont_task .list_task li,
+  .cont_task .list_task li + li {margin: -6px 0 0 -6px;}
+  .cont_direction .list_direction li {flex: 0 0 calc(100% - 0px);height: auto;padding: 10px 0;padding-left: 15px;margin: 8px 0 0 0;border-radius: 17px;font-size: 13px;}
+  .cont_direction .list_direction li .txt_num {width: 27px;line-height: 27px;margin-right: 8px;}
 
   .wrap_history .area_txt {margin-top: 2.5px}
   .wrap_history .area_txt .tit_cont{display: flex;justify-content: center;font-size: 32px;}
