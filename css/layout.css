@@ -74,17 +74,23 @@ font-weight:bold}
 .footer .list_sitemenu li:hover .link_site{color: #fff;background-color: #545454;}
 
 /* submenu */
-.wrap_submenu{height: 61px;padding:0 40px;border-top: 1px solid #e2e2e2;border-bottom: 1px solid #e2e2e2;}
-.wrap_submenu .inner_menu{display:flex;position: relative;max-width: 1840px;margin:0 auto;border-left: 1px solid #e2e2e2;border-right: 1px solid #e2e2e2;}
-.wrap_submenu .link_home{display:flex;align-items: center;justify-content: center;height:60px;width:60px;border-right: 1px solid #e2e2e2;}
+/* 2022-08-17 수정 시작 */
+.wrap_submenu{position: relative;height: 283px;padding:78px 0 61px;} 
+.wrap_submenu .tit_submenu{position:relative;z-index:1;font-size:54px;line-height:1;text-align: center;color:#333;letter-spacing: -0.025em;font-weight: 900;}
+.wrap_submenu .bg_submenu{position: absolute;left:0;right:0;top:0;bottom:-10px;background: url(../img/common/bg_snb.png) no-repeat center;background-size: cover;}
+.wrap_submenu .inner_menu{display:flex;position: absolute;bottom:0;left:0;right:0;max-width: 1200px;margin:0 auto;background-color:#fff}
+.wrap_submenu .inner_menu > * {position: relative;}
+.wrap_submenu .inner_menu > *::after{position: absolute;right:0;top: 50%;width: 1px;height:13px;background-color: #e2e2e2;transform: translateY(-50%);content: '';}
+.wrap_submenu .link_home{display:flex;align-items: center;justify-content: center;height:60px;width:60px;}
 .wrap_submenu .link_home .ico_home{width: 21px;height: 21px;color:transparent;background: url(../img/common/ico_home.png) no-repeat 0 0;background-size: cover;}
 .wrap_submenu .btn_print{display:flex;align-items: center;justify-content: center;height:60px;width:60px;
-margin-left: auto;border-left: 1px solid #e2e2e2;}
+margin-left: auto;}
+.wrap_submenu .btn_print::after{right:auto;left:0;}
 .wrap_submenu .btn_print .ico_print{width: 21px;height: 21px;color:transparent;background: url(../img/common/ico_print.png) no-repeat 0 0;background-size: cover;}
 
-.wrap_submenu div[class^='menu_depth']{position: relative;z-index: 10;height: 100%;padding-left:21px;border-right: 1px solid #e2e2e2;}
+.wrap_submenu div[class^='menu_depth']{position: relative;z-index: 10;height: 100%;padding-left:21px;}
 .wrap_submenu div[class^='menu_depth'] .tit_menu{display: block;position: relative;font-size: 15px;line-height:59px;font-weight: 500;cursor: pointer;} /* 2022-06-25 수정 */
-.wrap_submenu .menu_depth2 .tit_menu{color: #6ebb00;} /* 2022-06-25 수정 */
+/*.wrap_submenu .menu_depth2 .tit_menu{color: #6ebb00;}*/ /* 2022-06-25 수정 *//* 2022-08-17 삭제 */
 .wrap_submenu div[class^='menu_depth'] .tit_menu::after{position: absolute;top: 50%;right: 17px;width: 12px;height: 8px;margin-top: -4px;background: url(../img/common/ico_submenu_arr.png) no-repeat;background-size: 100%;content: '';}
 .wrap_submenu div[class^='menu_depth'].on .tit_menu::after{transform: rotate(180deg);}
 .wrap_submenu .menu_depth1{width: 172px;}
@@ -93,7 +99,7 @@ margin-left: auto;border-left: 1px solid #e2e2e2;}
 /* .wrap_submenu div[class^='menu_depth'].on .list_menu{display: block;} */
 .wrap_submenu div[class^='menu_depth'] .list_menu .link_menu{display: block;padding: 10px 0;font-size: 15px;line-height: 15px;font-weight: 500;}
 .wrap_submenu div[class^='menu_depth'] .list_menu li:hover .link_menu{color:#74c500}
-
+/* // 2022-08-17 수정 끝 */
 
 
 /* responsive css */
@@ -160,14 +166,18 @@ margin-left: auto;border-left: 1px solid #e2e2e2;}
   .footer .wrap_sitemenu .list_sitemenu{padding-bottom: 33.5px;}
 
   /* submenu */
-  .wrap_submenu{height: 37px;padding: 0;}
+  /* 2022-08-17 수정 시작 */
+  .wrap_submenu{height: 150px;padding:46px 0 35px;}
+  .wrap_submenu .tit_submenu {font-size: 22px;}
+  .wrap_submenu .bg_submenu {bottom: 0;background-position: left center;}
+  /* // 2022-08-17 수정 끝 */
   .wrap_submenu .inner_menu{border: none;}
   .wrap_submenu .link_home,
   .wrap_submenu .btn_print{display: none;}
   .wrap_submenu div[class^='menu_depth']{padding-left: 12.5px;border: none;}
   .wrap_submenu .menu_depth1, 
   .wrap_submenu .menu_depth2{width: 50%;box-sizing: border-box;}
-  .wrap_submenu .menu_depth2::after{position: absolute;left: -0.5px;top: 0;bottom: 0;background-color: #e2e2e2;width: 1px;content: "";}
+  /*.wrap_submenu .menu_depth2::after{position: absolute;left: -0.5px;top: 0;bottom: 0;background-color: #e2e2e2;width: 1px;content: "";} 2022-08-17 삭제 */
   .wrap_submenu div[class^='menu_depth'] .tit_menu{font-size: 11px;line-height: 35px}
   .wrap_submenu div[class^='menu_depth'] .tit_menu::after{right: 12px;width: 11px;height: 6px;}
   .wrap_submenu div[class^='menu_depth'] .list_menu{padding: 8px 10px;}
