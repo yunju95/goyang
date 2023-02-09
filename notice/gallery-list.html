@@ -181,10 +181,31 @@
             <strong class="tit_popup">갤러리 제목입니다.</strong>
           </div>
           <div class="body_popup">
-            <span class="box_thumb">
+            <div class="box_thumb"><!-- 2023-02-09 span > div 태그 변경 -->
               <span class="screen_out">리스트 썸네일</span>
-              <img src="" alt="" class="thumb_g">
-            </span>
+              <!-- 2023-02-09 슬라이더 추가 시작 -->
+              <!--<img src="" alt=""> 2023-02-09 삭제 -->
+              <div class="slide_thumbpopup">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide slide1">
+                    <img src="../img/sub/thumb_1200450.png" alt="" class="thumb_g">
+                  </div>
+                  <div class="swiper-slide slide2">
+                    <img src="../img/sub/thumb_1200450.png" alt="" class="thumb_g">
+                  </div>
+                </div>
+              </div>
+              <div class="wrap_arrow">
+                <div class="swiper-button-prev">이전</div>
+                <div class="swiper-button-next">다음</div>
+              </div>
+              <!-- // 2023-02-09 슬라이더 추가 끝 -->
+            </div><!-- // 2023-02-09 span > div 태그 변경 -->
+            <!-- 2023-02-09 디스크립션 추가 시작 -->
+            <p class="desc_box">내용입니다. 내용입니다. 갤러리 내용이 간략하게 
+              갤러리 내용이 간략하 소개됩니다. 갤러리 내용이 간략하게 소개됩니다. 
+              갤러리 내용이 간략하게 소개됩니다.</p>
+            <!-- // 2023-02-09 디스크립션 추가 끝 -->
           </div>
           <a href="#non3" class="btn_close">닫기</a>
         </div>
@@ -213,6 +234,16 @@
             $('.list_comm').addClass('type_list').removeClass('type_gallery');
           }
         }
+      });
+
+      // main popup slider
+      const swiperpopup = new Swiper('.slide_thumbpopup', {
+        spaceBetween: 10,
+        navigation: {
+        nextEl: ".box_thumb .swiper-button-next",
+        prevEl: ".box_thumb .swiper-button-prev",
+        clickable: true,
+      },
       });
     });
   </script>
